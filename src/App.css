@@ -1,10 +1,48 @@
-.App {
-  text-align: center;
+.carousel-caption{
+  top: 60%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link-animation{
+  display: inline-block;
+  color: #4b4b4b;
+}
+
+.link-animation:hover{
+  color: black;
+}
+
+.link-animation::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+.link-animation:hover::after {
+  width: 100%;
+}
+
+.form-control-lg{
+  font-size: 0.875rem;
+}
+
+.user-name{
+  color: #23A6F0;
+}
+
+.user-profession{
+  color: #252B42;
+}
+
+.ratings svg{
+  margin-right: 5px;
+  color: #E77C40;
+}
+
+footer{
+  background-color: #efefef!important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
